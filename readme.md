@@ -3,7 +3,6 @@
 The **Sillage Carbone** mobile app is designed to help users to access the carbon footprint of products and make sustainable choices in their daily lives. This app is developed using React Native.
 
 <img src="/assets/appShot.jpeg" alt="App Screenshot 1" width="300">
-![App Mock](/assets/appShot.jpeg)
 
 ## Features
 
