@@ -35,7 +35,7 @@ const ScanModal = ({ product, modalVisible, setModalVisible, setScanned }) => {
 				<TouchableOpacity
 					onPress={() => {
 						navigation.navigate("Product", { product: product });
-						setModalVisible(false);
+						handleGoBack();
 					}}
 				>
 					{/* Rajouter lien vers page Product à créer (si besoin) */}

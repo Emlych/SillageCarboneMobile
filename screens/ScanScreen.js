@@ -48,16 +48,9 @@ const ScanScreen = ({ navigation }) => {
 
 	//- Read code bar
 	const handleScannedCodeBar = ({ data }) => {
-		console.info("read it");
-
 		getProductFromBarCode(data);
-		console.info("read it yes");
-
 		setScanned(true);
-		console.info("read it scanned");
-
 		setModalVisible(true);
-		console.info("read it modal visible");
 	};
 
 	//----------------------------------------------------
@@ -95,10 +88,7 @@ const ScanScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-	safeareaContainer: {
-		flex: 1,
-		// backgroundColor: COLORS.lightBlue
-	},
+	safeareaContainer: { flex: 1 },
 });
 
 export default ScanScreen;
