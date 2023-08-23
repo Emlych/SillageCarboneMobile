@@ -2,7 +2,7 @@
 
 The **Sillage Carbone** mobile app is designed to help users track their carbon footprint and make sustainable choices in their daily lives. This app is developed using React Native, a popular framework for building cross-platform mobile applications.
 
-![App Gif](/assets/appGif.mov)
+![App Gif](/assets/appShot.jpeg)
 
 ## Features
 
@@ -15,9 +15,9 @@ The **Sillage Carbone** mobile app is designed to help users track their carbon 
 
 1. Clone this repository to your local machine.
 
-   ```bash
-   git clone https://github.com/Emlych/SillageCarboneMobile
-   ```
+```bash
+git clone https://github.com/Emlych/SillageCarboneMobile
+```
 
 2. Navigate to the project directory.
 
