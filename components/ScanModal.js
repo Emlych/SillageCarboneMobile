@@ -12,13 +12,20 @@ import { COLORS } from "../style";
 import { useNavigation } from "@react-navigation/native";
 
 // Modal with minimal product information, that will popup when barcode scanned
-const ScanModal = ({ product, modalVisible, setModalVisible, setScanned }) => {
+const ScanModal = ({
+	product,
+	modalVisible,
+	setModalVisible,
+	setScanned,
+	setProduct,
+}) => {
 	const navigation = useNavigation();
 
-	// -- Close modal and enable scan
+	// -- Close modal, enable scan and initialize product
 	const handleGoBack = () => {
 		setModalVisible(false);
 		setScanned(false);
+		setProduct();
 	};
 
 	return (

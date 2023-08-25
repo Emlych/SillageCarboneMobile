@@ -20,7 +20,11 @@ const windowWidth = Dimensions.get("window").width;
 const HomeScreen = ({ navigation }) => {
 	// Function to navigate to the scan screen
 	const navigateToScan = () => {
-		navigation.navigate("ScanTabScreen");
+		// -- Need to reset navigation stack to have only the ScanTabScreen and navigating back to it
+		navigation.reset({
+			index: 0,
+			routes: [{ name: "ScanTabScreen" }],
+		});
 	};
 	return (
 		<SafeAreaView style={styles.safearea}>

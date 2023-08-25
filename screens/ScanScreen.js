@@ -19,6 +19,11 @@ const ScanScreen = ({ navigation }) => {
 
 	// -- Ask for permission each time you open the camera screen
 	useEffect(() => {
+		// On load of screen, setScanned to false
+		setScanned(false);
+		setProduct();
+
+		// Request permission to access camera
 		const getPermission = async () => {
 			try {
 				const { status } = await BarCodeScanner.requestPermissionsAsync();
@@ -48,8 +53,8 @@ const ScanScreen = ({ navigation }) => {
 
 	//- Read code bar
 	const handleScannedCodeBar = ({ data }) => {
-		getProductFromBarCode(data);
 		setScanned(true);
+		getProductFromBarCode(data);
 		setModalVisible(true);
 	};
 
@@ -80,6 +85,7 @@ const ScanScreen = ({ navigation }) => {
 						modalVisible={modalVisible}
 						setModalVisible={setModalVisible}
 						setScanned={setScanned}
+						setProduct={setProduct}
 					/>
 				)}
 			</View>

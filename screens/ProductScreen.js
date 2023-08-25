@@ -39,12 +39,6 @@ const Product = ({ route }) => {
 					<Text>Type de carburant: {product.oil} </Text>
 					<Text>Type de bateau: {product.vessel_type} </Text>
 				</View>
-
-				<View style={styles.precision}>
-					<Text style={styles.textPrecision}>
-						Pour scanner un autre produit, swipez à droite.
-					</Text>
-				</View>
 			</ScrollView>
 		</SafeAreaView>
 	);
