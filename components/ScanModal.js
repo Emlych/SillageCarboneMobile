@@ -11,6 +11,7 @@ import { Entypo } from "@expo/vector-icons";
 import { COLORS } from "../style";
 import { useNavigation } from "@react-navigation/native";
 
+// Modal with minimal product information, that will popup when barcode scanned
 const ScanModal = ({ product, modalVisible, setModalVisible, setScanned }) => {
 	const navigation = useNavigation();
 

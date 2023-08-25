@@ -17,7 +17,7 @@ const ScanScreen = ({ navigation }) => {
 	//-- States for permission acess to camera + code bar scanned or not
 	const [hasPermission, setHasPermission] = useState(null);
 
-	// -- Ask for permission each time you open the camera screen (later would be nice to ask for it only once)
+	// -- Ask for permission each time you open the camera screen
 	useEffect(() => {
 		const getPermission = async () => {
 			try {
@@ -69,7 +69,7 @@ const ScanScreen = ({ navigation }) => {
 
 	return (
 		<SafeAreaView style={styles.safeareaContainer}>
-			<View style={{ height: "90%", width: width, justifyContent: "center" }}>
+			<View style={styles.scanScreen}>
 				<BarCodeScanner
 					onBarCodeScanned={scanned ? undefined : handleScannedCodeBar}
 					style={{ height: height, width: width }}
@@ -89,6 +89,7 @@ const ScanScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
 	safeareaContainer: { flex: 1 },
+	scanScreen: { height: "90%", width: width, justifyContent: "center" },
 });
 
 export default ScanScreen;

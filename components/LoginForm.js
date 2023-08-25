@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import Button from "../components/Button";
-import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
-import { COLORS, SIZE } from "../style";
 import CustomInput from "./Input";
 
+// Component Login
 const LoginForm = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
+	// Behaviour on form submission : TODO implement functionnality
 	const submitLogin = () => {
 		console.log("Email:", email);
 		console.log("Password:", password);

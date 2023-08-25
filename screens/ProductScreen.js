@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "../style";
 
+// Screen to display all informations on a product
 const Product = ({ route }) => {
 	const { product } = route.params;
 	return (

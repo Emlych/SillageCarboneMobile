@@ -1,5 +1,3 @@
-/* HomeScreen.js : landing screen that will enable user to navigate to scan screen, project info screen and account management screen  */
-
 // Import components and style
 import {
 	Text,
@@ -18,7 +16,7 @@ import Button from "../components/Button";
 const windowHeight = Dimensions.get("window").height;
 const windowWidth = Dimensions.get("window").width;
 
-// Home Screen component
+/* HomeScreen.js : landing screen that will enable user to navigate to scan screen, project info screen and account management screen  */
 const HomeScreen = ({ navigation }) => {
 	// Function to navigate to the scan screen
 	const navigateToScan = () => {

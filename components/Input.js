@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
-import Button from "./Button";
-import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
+import React from "react";
+import { View, TextInput, StyleSheet } from "react-native";
+import { FontAwesome5 } from "@expo/vector-icons";
 import { COLORS, SIZE } from "../style";
 
+// Custom input with icon and text input
 const CustomInput = ({ icon, value, placeholder, callback }) => {
 	return (
 		<View style={styles.inputWithIcon}>

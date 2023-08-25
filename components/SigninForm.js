@@ -3,11 +3,13 @@ import { View, StyleSheet } from "react-native";
 import Button from "../components/Button";
 import CustomInput from "./Input";
 
+// Component Signin
 const SigninForm = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 
+	// TODO: implement login behaviour
 	const submitLogin = () => {
 		console.log("Email:", email);
 		console.log("Password:", password);

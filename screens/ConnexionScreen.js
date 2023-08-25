@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LoginForm from "../components/LoginForm";
 import SigninForm from "../components/SigninForm";
 
+// Screen for Login
 const ConnexionScreen = ({ navigation }) => {
 	// Toggle signin or signup views
 	const [isSignIn, setIsSignIn] = useState(true);

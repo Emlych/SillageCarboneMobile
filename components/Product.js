@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "../style";
 
+// Product component to display picture, name, brand, carbon footprint and travel distance
 const Product = ({ route }) => {
 	const { product } = route.params;
 	return (
